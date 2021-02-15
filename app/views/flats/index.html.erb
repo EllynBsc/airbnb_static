@@ -1,0 +1,31 @@
+<h1 class="text-center">Index of the flats</h1>
+
+
+<!-- each + tab -->
+
+<div class="container">
+  <div class="row">
+    <% @flats.each do |flat| %>
+    <div class="col-4">
+      <h4><%= flat['id'] %> - <%= link_to flat['name'], flat_path(flat["id"]) %> </h4>
+      <p><%= flat['price'] %>euros </p>
+      <p><%= image_tag flat['imageUrl'], width: '200px' %> </p>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+
+
+<!-- YOU DONT TYPE THEM BY HAND, YOU USE HELPER METHODS -->
+<!-- <img src="/" alt=""> -->
+<!-- im + tab -->
+<%#= image_tag "source", alt: "alttext" %>
+
+<!-- <a href=""></a> -->
+<!-- lt + tab -->
+<!-- <%#= link_to 'text', prefix_path %> -->
+
+
+
+<!-- cmd p => you can look for a file -->

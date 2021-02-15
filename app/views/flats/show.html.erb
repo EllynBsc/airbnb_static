@@ -1,0 +1,10 @@
+
+<h1><%= @flat['name'] %></h1>
+<p><%= @flat['price'] %>euros</p>
+
+<%= image_tag @flat['imageUrl'], width: '200px' %>
+
+<!-- I want a link to come back home -->
+
+<%= link_to 'go back home', flats_path, class: 'btn btn-primary' %>
+
